@@ -1,0 +1,369 @@
+.Community_content_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+@media(min-width:535px) {
+  .Community_top_container {
+    margin: 100px auto 48px auto;
+
+    height: 383px;
+    width: 707px;
+  }
+
+  .Community_welcome_container {
+    height: 383px;
+    width: 383px;
+  }
+
+  .Artist_cover_image {
+    border-radius: 14px;
+  }
+
+  .Community_info_container {
+    height: 20%;
+    width: 100%;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+
+    position: absolute;
+    bottom: 0;
+  }
+
+  .Community_name {
+    font-size: 23px;
+    padding-top: 4px;
+  }
+
+  .PersonalProfile_container {
+    flex-direction: column;
+    justify-content: center;
+
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    width: calc(90% - 383px);
+    height: 65%;
+  }
+
+  .PersonalProfile_container .ProfileImage_container {
+    width: 64px;
+    height: 64px;
+  }
+
+  .PersonalProfile_container .Profile_followersCount {
+    margin-top: 10px;
+  }
+
+  .PersonalProfile_container .Profile_nickname {
+    font-size: 20px;
+  }
+
+  .Feed_content_container {
+    width: 707px;
+    padding-top: 48px;
+  }
+
+  .FeedPost_container {
+    width: 707px;
+  }
+
+}
+
+@media(max-width:534px) {
+  .Community_top_container {
+    flex-direction: column;
+
+    margin: 50px auto 88px auto;
+
+    height: 45vh;
+    width: 100vw;
+  }
+
+  .Community_welcome_container {
+    height: 85%;
+    width: 100%;
+  }
+
+  .Artist_cover_image {
+    height: 100%;
+  }
+
+  .Community_info_container {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    height: 20%;
+  }
+
+  .Community_name {
+    font-size: 17px;
+    padding-top: 5px
+  }
+
+  .Community_members {
+    font-size: 14px;
+  }
+
+  .PersonalProfile_container {
+    justify-content: flex-start;
+
+    border-radius: 14px;
+    margin-top: 40px;
+    width: 80%;
+    height: 20%;
+  }
+
+  .PersonalProfile_container .ProfileImage_container {
+    width: 54px;
+    height: 54px;
+  }
+
+  .PersonalProfile_container .Profile_userPostsCount {
+    margin-left: 50px;
+  }
+
+  .PersonalProfile_container .Profile_nickname {
+    font-size: 16px;
+  }
+
+  .Feed_content_container {
+    align-items: center;
+
+    width: 100vw;
+    padding-top: 44px;
+  }
+
+  .Input_bar_container {
+    width: 90%;
+  }
+
+  .FeedPost_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .FeedPost_list {
+    width: 90%;
+  }
+
+  .Post_item_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+.Community_top_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Community_welcome_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Community_info_container {
+  color: white;
+  text-align: center;
+  background-color: rgb(125, 43, 229);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Community_name {
+  font-weight: 800;
+}
+
+.Community_members {
+  font-weight: 600;
+}
+
+.PersonalProfile_container:hover {
+  cursor: pointer;
+  background-color: rgba(125, 43, 229, 0.4);
+  ;
+}
+
+.PersonalProfile_container {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: rgba(211, 211, 211, 0.8);
+}
+
+.PersonalProfile_container .ProfileImage {
+  width: 100%;
+  height: 100%;
+}
+
+.PersonalProfile_container .Profile_nickname {
+  font-weight: 600;
+}
+
+.Feed_content_container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  margin: 0 auto;
+  border-top: 2px solid rgb(214, 214, 214);
+}
+
+.Input_bar_container:hover {
+  box-shadow: 0 0 20px 4px rgb(182, 182, 182);
+}
+
+.Input_bar_container {
+  display: flex;
+  align-items: center;
+
+  height: 66px;
+  border-radius: 100px;
+  box-shadow: 0 0 15px 2px rgba(128, 128, 128, 0.7);
+}
+
+.Input_bar_text_container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.ProfileImage_container {
+  padding: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+
+}
+
+.ProfileImage {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+
+}
+
+.Input_bar_text_area {
+  color: rgb(185, 185, 185);
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.Input_bar_attach_container {
+  display: flex;
+  padding-right: 32px;
+}
+
+.FeedPost_container {
+  padding: 10px 0 60px;
+}
+
+.FeedPost_list {
+  padding-top: 10px;
+}
+
+.Post_item_container {
+  border-bottom: 2px solid rgb(214, 214, 214);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.PostHeader_container {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.PostHeader_profile_container {
+  display: flex;
+  align-items: center;
+}
+
+.PostHeader_profileImage_container {
+  flex-shrink: 0;
+}
+
+.PostHeader_profileImage_container .ProfileImage {
+  width: 36px;
+  height: 36px;
+
+}
+
+.Profile_nickname_container {
+  margin-left: 8px;
+}
+
+.Profile_nickname {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.PostItem_content_container {
+  padding: 10px 0 0 0;
+}
+
+
+.PostItem_text_container {
+  margin-top: 10px;
+}
+
+.PostItem_text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.Text_more_button {
+  color: gray;
+  font-weight: 400;
+}
+
+
+.PostItem_button_container {
+  display: flex;
+  align-items: center;
+}
+
+.Button_group_container {
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 14px;
+
+  padding: 0 7px 0 7px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
+}
+
+
+
+.Button_item_container {
+  display: flex;
+  align-items: center;
+
+  margin: 4px;
+}
+
+.Button_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.Reaction_count {
+  font-size: 14px;
+
+  margin-left: 3px;
+}
+
+.CommentButton {
+  margin-left: 10px;
+}
+

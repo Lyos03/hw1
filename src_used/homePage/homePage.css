@@ -1,0 +1,151 @@
+.body {
+  margin: 80px 0 0 0;
+}
+
+.HomePage_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.HomePage_artist_item:hover .Artist_name {
+  color: rgb(122, 252, 208);
+}
+
+@media (min-width: 705px) {
+
+  .HomePage_component_area {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .HomePage_component_inner_area {
+    width: 65%;
+  }
+
+  .HomePage_artist_item {
+    margin: 0 0 20px 15px;
+    padding: 0;
+    height: 249px;
+    width: 208px;
+  }
+
+  .Artist_cover_image {
+    border-radius: 12px;
+    height: 177px;
+  }
+
+  .Artist_logo_container {
+    left: 0;
+    right: 0;
+    top: 149px;
+
+    margin: 0 auto;
+
+    height: 43px;
+    width: 43px;
+  }
+
+  .Artist_name {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 704px) {
+
+  .HomePage_component_area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .HomePage_component_inner_area {
+    width: 80%;
+  }
+
+  .HomePage_artist_item {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+    height: 115px;
+    width: 155px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .Artist_cover_image {
+    display: none;
+  }
+
+  .Artist_logo_container {
+    top: 7px;
+    left: 40px;
+    
+    width: 68px;
+    height: 68px;
+  }
+
+  .HomePage_component_area .Artist_logo {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .Artist_name {
+    font-size: 16px;
+  }
+
+}
+
+@media(max-width: 401px) {
+  .HomePage_component_inner_area {
+    width: 90%
+  }
+}
+
+.HomePage_artist_item {
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.HomePage_component_inner_area {
+  margin: 0 auto;
+}
+
+.HomePage_component_inner_area_title {
+  margin: 0 15px;
+  padding: 0;
+}
+
+.HomePage_artist_list_container {
+  margin-top: 30px;
+}
+
+.HomePage_artist_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Artist_logo_container {
+  background-color: #fff;
+  border-radius: 50%;
+
+  padding: 3px;
+
+  position: absolute;
+}
+
+.Artist_text_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 25%;
+}
+
+.Artist_name {
+  font-weight: 850;
+}

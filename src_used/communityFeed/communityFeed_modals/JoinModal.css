@@ -1,0 +1,83 @@
+@media(min-width:535px){
+    .JoinModal{
+        width: 448px;
+    }
+}
+
+  
+.JoinModal{
+    padding: 30px 34px 20px;
+
+    border-radius: 14px;
+
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+}
+
+.JoinModal_profileImage_container{
+    margin: 0 auto;
+    width: 100px;
+    
+}
+
+.JoinModal_profileImage_container .ProfileImage{
+    height: 100px;
+    width: 100px;
+}
+
+.JoinModal_nickname_container{
+    margin-top: 24px;
+}
+
+.JoinModal_nickname_title{
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.JoinModal_username_input_container{
+    margin-top: 8px;
+    padding: 0 18px;
+
+    height: 56px;
+    border-radius: 8px;
+
+    background-color: rgb(230, 230, 230);
+
+    display: flex;
+    align-items: center;
+}
+#join_username_input{
+
+    font-size: 16px;
+    line-height: 24px;
+
+    height: 100%;
+    
+    flex-grow: 1;
+}
+
+.JoinModal_submit_container{
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    
+}
+
+#join_submit_button{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.join_submit_enabled{
+    color:rgb(89, 241, 191);
+}
+
+.join_submit_disabled{
+    color: gray;
+}

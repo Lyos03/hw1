@@ -1,0 +1,53 @@
+.no-scroll {
+    overflow: hidden;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 101;
+}
+
+
+
+@media(min-width: 535px) {
+    .CloseButton_container{
+        right: 0;
+        top: -40px;
+    }
+}
+
+@media(max-width:534px) {
+    .CloseButton_container{
+        right: 10px;
+        top: 15px;
+    
+        border: 2px solid rgb(122, 252, 208);
+    }
+}
+
+.CloseButton_container:hover{
+    background-color:rgb(122, 252, 208);
+}
+
+.CloseButton_container{
+    position: absolute;
+
+    border-radius: 14px;
+}
+
+.CloseButton_text{
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+

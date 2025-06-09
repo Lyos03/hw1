@@ -1,0 +1,88 @@
+header.header {
+    border-bottom: 0px;
+}
+
+.body {
+    margin: 80px 0 0 0;
+    height: calc(100vh - 80px);
+}
+
+.Settings_container {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.Settings_inner_area {
+    width: 70%;
+    height: 85%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Settings_title {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.Settings_groups_container {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Settings_group {
+    margin-bottom: 10px;
+}
+
+.Settings_group_sub_title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.Settings_group_options {
+    padding: 10px 0 10px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.Group_option_text {
+    margin-right: 60px;
+
+}
+
+.Group_option_button {
+    border: 3px solid rgb(0, 203, 213);
+    color: rgb(0, 203, 213);
+    font-weight: bold;
+
+    padding: 5px 7px 5px 7px;
+    border-radius: 7px;
+}
+
+#Other_settings {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#MoreOptions {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggled {
+    background-color: rgb(0, 203, 213);
+    color: #fff;
+}

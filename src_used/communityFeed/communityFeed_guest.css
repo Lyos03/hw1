@@ -1,0 +1,74 @@
+.LoginRequired_button {
+  text-align: center;
+  padding: 20px;
+}
+
+.LoginRequiredButton_text {
+  color: gray;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.UserJoinPrompt_container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  width: 100vw;
+  height: 10vh;
+  min-height: 65px;
+  
+
+  display: flex;
+  align-items: center;
+}
+
+.UserJoinPrompt_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 85%;
+
+  margin: 0 auto;
+}
+
+
+.UserJoinPrompt_text {
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+#UserJoinPrompt_button {
+  background-color: rgb(0, 203, 213);
+
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 100px;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserJoinPromptButton_text {
+  color: #fff;
+
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 15px;
+
+}
+
+.NotSubscribed_message {
+  color: gray;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}

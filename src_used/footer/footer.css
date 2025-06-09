@@ -1,0 +1,24 @@
+.Footer{
+  margin:auto auto 0 auto;
+  padding: 0 50px 70px 50px;
+  
+
+  width: 65%;
+}
+
+.Footer_inner_area{
+  font-size: 90%;
+  display: flex;
+  justify-content: center;
+
+  padding-top:30px;
+  border-top: 2px solid rgb(214, 214, 214);
+}
+
+.Footer_text_container{
+  line-height: 26px;
+  margin:0
+}
+.Footer_highlight{
+  font-weight: 700;
+}

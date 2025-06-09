@@ -1,0 +1,56 @@
+.body{
+    margin: 80px 0 0 0;
+    height: calc(100vh - 80px);
+}
+
+.Account_container{
+    background-color: #444;
+    color:white;
+
+    height: 15%;
+    min-height: 95px;
+
+    display: flex;
+    align-items: center;
+}
+
+.Account_inner_area{
+    width: 70%;
+
+    margin: 0 auto;
+}
+
+.AccountProfile_name_text{
+    margin: 0;
+    padding: 0;
+
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+}
+
+.AccountProfile_email_text{
+    margin-top: 2px;
+
+    color:rgb(150, 150, 150);
+    font-size: 16px;
+    line-height: 19px;
+    
+}
+
+.AccountProfile_signout_button{
+    margin-top: 14px;
+    border-bottom: 1px solid lightgray;
+
+    color:lightgray;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.Services_container{
+    height: 85%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

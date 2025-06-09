@@ -1,0 +1,325 @@
+.Global_header {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+header.header {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid lightgray;
+    height: 80px;
+
+}
+
+@media(min-width:851px) {
+    .searchBar_box {
+        width: 300px;
+    }
+}
+
+@media(max-width:850px) {
+    .searchBar_container {
+        position: fixed;
+        top: 100px;
+        left: 0;
+
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .searchBar_box {
+        width: 70%;
+
+        box-shadow: 0 0 10px gray;
+    }
+
+}
+
+@media(max-width: 704px) {
+    .header_bar_notifications_menu .Artist_logo {
+        width: 43px;
+        height: 43px;
+    }
+}
+
+@media(min-width:535px) {
+    .header_service_container {
+        padding-left: 50px;
+    }
+
+    a.logo {
+        height: 20px;
+        width: 136px;
+        background: url(data:image/png;base64,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);
+    }
+
+    .header_bar {
+        position: relative;
+
+        padding: 0 30px 0 12px;
+    }
+
+    .header_bar_icon {
+        margin: 0px 15px;
+    }
+
+
+
+    .header_bar_notifications_menu {
+        position: absolute;
+        top: 60px;
+        right: -10px;
+
+        border-radius: 14px;
+
+        width: 550%;
+
+        box-shadow: 0 0 10px gray;
+    }
+}
+
+@media(max-width:534px) {
+    .header_service_container {
+        padding-left: 7.5px;
+    }
+
+    a.logo {
+        height: 65px;
+        width: 65px;
+        background: url(https://downloadr2.apkmirror.com/wp-content/uploads/2023/11/16/654c791c2b2e7_co.benx.weverse.png);
+        border-radius: 14px;
+    }
+
+    .header_bar {
+        padding: 0 5px 0 12px;
+    }
+
+    .header_bar_icon {
+        margin: 0px 8px;
+    }
+
+    .header_bar_notifications_menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+
+        width: 100vw;
+
+        border-bottom: 2px solid gray;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+}
+
+.header_service_container {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header_logo {
+    margin: 0px;
+    padding: 0px;
+}
+
+a.logo {
+    display: block;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header_bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header_bar_icon:hover {
+    background-color: rgba(204, 203, 203, 0.699);
+    border-radius: 50%;
+}
+
+.header_bar_icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    padding: 0px;
+    height: 38px;
+    width: 38px;
+}
+
+
+#signInButton {
+    background-color: rgb(0, 203, 213);
+    color: white;
+
+    padding: 8px 20px;
+    border-radius: 100px;
+
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 15px;
+}
+
+.searchBar_box {
+    position: relative;
+    height: 48px;
+    padding: 0 52px 0 18px;
+
+    border-radius: 100px;
+
+    background: rgb(238, 238, 238);
+
+    display: flex;
+    align-items: center;
+}
+
+.searchBar_search_button {
+    margin-right: 10px;
+}
+
+.searchBar_search_button .header_bar_icon {
+    height: 22px;
+    width: 22px;
+}
+
+.searchBar_search_button .search_icon {
+    margin: 0;
+}
+
+#search_input {
+    background-color: #0000;
+    height: 100%;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#searchBar_search_clear_button {
+    position: absolute;
+    right: 14px;
+
+    height: 18px;
+    width: 18px;
+
+}
+
+.clearButton_background {
+    position: relative;
+    background: gray;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+
+}
+
+.clearButton_foreground {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    right: 0;
+    color: #fff;
+
+    font-family: monospace;
+    font-size: 18px;
+}
+
+#header_bar_notifications_container {
+    position: relative;
+}
+
+.header_bar_notifications_menu {
+    z-index: 100;
+}
+
+.notifications_menu_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-top: 20px;
+}
+
+.notifications_menu_title {
+    flex-shrink: 0;
+
+    margin: 0;
+    padding: 0 20px;
+    font-weight: 900;
+}
+
+.notifications_menu_area {
+    flex-grow: 1;
+    padding: 30px 0 24px;
+}
+
+.notifications_list_container {
+    margin-top: 0;
+}
+
+.notifications_list_date {
+    padding-left: 20px;
+
+    text-align: left;
+    font-weight: bold;
+}
+
+.notifications_list {
+    padding: 0 12px;
+    margin: 0;
+}
+
+.notifications_item_container:hover {
+    background-color: rgba(204, 203, 203, 0.699);
+    border-radius: 14px;
+}
+
+.notifications_item_container {
+    display: flex;
+    align-items: center;
+
+    padding: 17px 8px 19px;
+    margin: 0;
+}
+
+.notifications_text {
+    margin: 0 0 0 10px;
+    font-weight: 500;
+}
+
+.search_icon_black{
+    background-image: url(https://img.icons8.com/?size=100&id=59878&format=png&color=000000);
+}
+.search_icon_white{
+    background-image: url(https://img.icons8.com/?size=100&id=59878&format=png&color=FFFFFF);
+}
+
+.notifications_icon_black {
+    background-image: url(https://img.icons8.com/?size=100&id=eMfeVHKyTnkc&format=png&color=000000);
+}
+.notifications_icon_white{
+    background-image: url(https://img.icons8.com/?size=100&id=eMfeVHKyTnkc&format=png&color=FFFFFF);
+}
+
+.account_icon_black {
+    background-image: url(https://img.icons8.com/?size=100&id=2oRq7VXjDba7&format=png&color=000000);
+}
+.account_icon_white{
+    background-image: url(https://img.icons8.com/?size=100&id=2oRq7VXjDba7&format=png&color=FFFFFF);
+}
+
+.settings_icon_black {
+    background-image: url(https://img.icons8.com/?size=100&id=4511GGVppfIx&format=png&color=000000);
+}
+.settings_icon_white {
+    background-image: url(https://img.icons8.com/?size=100&id=4511GGVppfIx&format=png&color=FFFFFF);
+}
+

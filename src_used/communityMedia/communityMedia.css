@@ -1,0 +1,147 @@
+.Community_media_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    margin-top: 100px ;
+}
+
+@media(min-width:535px) {
+
+    .Media_content_container {
+        width: 90%;   
+    }
+
+    .Video_item_container {
+        margin: 10px 20px 20px 0px;
+        width: 320px;
+    }
+    
+    .Video_thumbnail_container {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media(max-width:534px){
+
+    .Media_content_container {
+        width: 90%;
+    }
+
+    .Video_item_container {
+        margin: 10px 0 20px 0;
+        flex-grow: 1;
+    }
+
+    .Video_thumbnail_container {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+
+.Media_content_container {
+    margin-bottom: 50px;
+}
+
+.Media_title {
+    display: flex;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.Media_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.Media_album_container{
+    margin: 10px 10px 10px 0;
+}
+
+.Video_thumbnail_container {
+    position: relative;
+}
+
+.Video_thumbnail_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 14px;
+    border: 0;
+}
+
+
+.Video_title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    
+    margin-top: 15px;
+}
+
+
+.Media_album {
+    display: flex;
+    align-items: center;
+
+    padding:8px;
+    background: white;
+    border-radius: 14px;
+
+    cursor: pointer;
+}
+
+.Media_album_cover {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 14px;
+    box-shadow: 0 0 10px gray;
+}
+
+.Media_album_info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0 10px;
+    color: grey;
+}
+
+.Media_album_title {
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.Media_album_artist {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(92, 92, 92);
+}
+
+.Media_album_release_date {
+    font-size: 14px;
+    
+}
+
+.Media_album_details {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+}
+
+.hidden{
+    display: none; /*cause of styles.css*/
+}

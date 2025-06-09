@@ -1,0 +1,48 @@
+.header_community {
+    margin-left: 15px;
+}
+
+.body {
+    padding: 80px 0 0 0;
+}
+
+@media(max-width:534px) {
+    .header_community {
+        display: none;
+    }
+}
+
+.Community_navigation_container {
+    position: fixed;
+    z-index: 10;
+    top: 80px;
+
+    width: 100vw;
+}
+
+.Community_navigation_bar {
+    background-color: rgb(125, 43, 229);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 0;
+    height: 30px;
+}
+
+.Community_navigation_link {
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin: 0 30px;
+    padding: 8px 10px;
+}
+
+.Community_navigation_tab-selected{
+    border-bottom: 2px solid #fff;
+}
+
+
+

@@ -1,0 +1,195 @@
+.banner_inner_area {
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner_slide-show {
+    height: 100%;
+    display: flex;
+}
+
+.banner_container {
+    position: relative;
+    color: rgb(0,0,0);
+}
+
+.banner_background_image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Weverse.banner_background_image {
+    background-image: url(https://weverse-phinf.pstatic.net/MjAyNTAzMTNfMjc5/MDAxNzQxODU2ODg2ODM0.LYQVTDjPfBaOh83ThSuImZBc0wjUMlCZ7UXTs0p-q8gg.JBKHUrYZtrvKdgTKgGaIWzWEQJgGPRHi3JfHny5RwlQg.PNG/763808278976564493c3ad16b-3bb8-4e91-b590-a2abeb097fea.png?type=f1070_600);
+}
+
+#RM.banner_background_image {
+    background-image: url(https://weverse-phinf.pstatic.net/MjAyNTAzMjZfMjY1/MDAxNzQyOTc4OTQ2MDAy.Qg-s3_qIEYTNTApOfWAPtI6JLY2HbT3GOr-BpxqKkNQg.V1CQv88FtxkwWn3HOk1Gx_cdueYHWTpNZf8UUgZTrtkg.PNG/125056152138316205392d2037-6b4c-40a0-ad6f-5d912c278d79.png?type=f1070_600);
+}
+
+#WeverseZone.banner_background_image{
+    background-image: url(https://weverse-phinf.pstatic.net/MjAyNTAzMjhfMjU4/MDAxNzQzMTE5MjA4MTQx.7cG8T6YB3RSs9Fwev9ijbRHDvd8zovpYBRntMhAW3pIg.uMZht8H6YFfKKQec9wQxbEmNk3pOVfhE1L8zwVh3CU0g.PNG/69885397186401441d20d8516-8a36-4bab-bbe9-447ee32ba7e4.png?type=f1070_600);
+}
+
+#JIN.banner_background_image{
+    background-image: url(https://weverse-phinf.pstatic.net/MjAyNTA0MTdfMTUg/MDAxNzQ0ODc0MjA5MzEx.YouiRJ4si8IHWIUDncHf8jU_4B4rPye7A0TfB5PuAHkg.5pTOBTbTLEEXBWXtBrgvmTSbEGLk_AKq_0CnLT7AGcUg.PNG/8113236402955012597178149-b7cd-4c8b-9b72-5fb95d1559bc.png?type=f1070_600);
+}
+
+.banner_badge{
+    font-size: 13px;
+    font-weight: 700;
+
+    position: absolute;
+    left: 30px;
+    top:30px;
+}
+
+.banner_title_area {
+    font-weight: 700;
+    position: absolute;
+}
+
+.banner_slideIndex_bar{
+    background-color: lightgrey;
+    display: flex;
+
+    height: 3px;
+    width: 150px;
+    
+}
+
+.progress_active{
+    background-color: black;
+}
+.progress_inactive{
+    background-color: lightgray;
+}
+
+.banner_slideIndex_progress{
+    top:0;
+
+    height: 3px;
+    width: calc(150px/4);
+}
+
+.banner_arrow:hover{
+    box-shadow: 0 0 10px lightgray;
+}
+
+.banner_arrow {
+    position: absolute;
+
+    border-radius: 100px;
+    background: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:535px) {
+
+    #banner_area {
+        padding: 36px 0 26px 0;
+    }
+
+    .banner_inner_area {
+        width: 535px;
+    }
+
+    .banner_background_image {
+        height: 300px;
+        width: 535px;
+
+        border-radius: 24px;
+    }
+
+    .banner_title_area {
+        left: 30px;
+        bottom: 30px;
+
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .banner_slideIndex_bar{
+        margin:20px auto 0 auto;
+    }
+
+    .banner_arrow{
+        top: 40%;
+        height: 52px;
+        width: 52px;
+    }
+
+    #banner_arrow_next {
+        right: -15%;
+    }
+
+    #banner_arrow_prev {
+        left: -15%;
+    }
+
+    .arrow_icon{
+        height: 42px;
+        width: 42px;
+    }
+}
+
+@media(max-width:534px) {
+
+    #banner_area {
+        padding: 0;
+    }
+
+    .banner_background_image {
+        width: 100vw;
+        height: 25vh;
+    }
+
+    .banner_title_area {
+        left: 30px;
+        top: 50%;
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .banner_slideIndex_bar_container{
+        position:absolute;
+        left: calc(50% - (170px/2));
+        bottom: 20px;
+        
+        width: 170px;
+        height: 15px;
+        background-color: #fff;
+        border-radius: 24px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner_arrow{
+        bottom: 15px;
+        height: 25px;
+        width: 25px;
+    }
+
+    #banner_arrow_next{
+        right: 15%;
+    }
+
+    #banner_arrow_prev{
+        left: 15%;
+    }
+
+    .arrow_icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.font-white{
+    color: rgb(255,255,255);
+}

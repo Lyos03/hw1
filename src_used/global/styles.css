@@ -1,0 +1,108 @@
+body{
+    font-family:"Roboto", sans-serif;
+    margin: 0px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;/*for the underline*/
+}
+
+input{
+    outline: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    background-color: #0000;
+}
+
+input::placeholder {
+    color: rgb(200, 200, 200);
+}
+
+textarea{
+    background-color: #0000;
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+
+    resize: none;
+}
+
+textarea::placeholder{
+    color: rgb(200, 200, 200);
+}
+
+button {
+    cursor: pointer;
+  
+    font:inherit;
+  
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.div_as_button{
+    cursor: pointer;
+}
+
+.Artist_logo{
+    width: 43px;
+    height: 43px;
+  
+    border-radius: 50%;
+}
+  
+  
+.hidden{
+    display: none;
+}
+
+.dark-mode_text{
+    color:#fff;
+}
+
+.light-mode_text{
+    color:black;
+}
+
+.dark-mode_darkgray{
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode_gray{
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.light-mode_white{
+    background-color: #fff;
+    color: black;
+}
+
+.light-mode_lightgray{
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+.error {
+    display: block;
+
+    color: rgb(254, 91, 88);
+    font-weight: 400;
+    font-size: 12px;
+
+    margin-top: 4px;
+}
+
+
+
